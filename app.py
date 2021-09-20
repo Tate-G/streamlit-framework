@@ -35,6 +35,7 @@ y=df['5. adjusted close'][restrict].astype(float)
 st.title('TDI 12-day Milestone Stock Price App')
 
 p=figure(title='{} in {} {}'.format(symbol,month_dict[month],year),x_axis_label='Day',y_axis_label='Close (adjusted)')
-p.line(x,y,line_width=3)
+#p.line(x,y,line_width=3)
+p.line([0,1,2,3],[5,7,12,9],line_width=3)
 
 st.bokeh_chart(p)
