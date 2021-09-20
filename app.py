@@ -1,12 +1,11 @@
 import pandas as pd
 import requests
-from dotenv import load_dotenv
 import os
 import streamlit as st
 from bokeh.plotting import figure
 
-load_dotenv()
-API_key=os.getenv('ALPHA_VANTAGE_API')
+
+API_key=os.environ.get('ALPHA_VANTAGE_API')
 
 symbol='GOOG'
 
